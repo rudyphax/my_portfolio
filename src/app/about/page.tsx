@@ -19,7 +19,7 @@ export default function AboutPage() {
               src={profile.photo}
               alt={profile.name}
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="224px"
             />
           </div>
