@@ -1,6 +1,3 @@
-// TODO: Replace any remaining placeholder values below with your real info.
-// This is the single source of truth for name/role/bio copy used across the site.
-
 export const profile = {
   name: "Rudy Phaxay",
   role: "Senior Software Engineer",
@@ -11,9 +8,6 @@ export const profile = {
   },
   location: "Minneapolis, MN",
   photo: "/images/profile.webp",
-  // Full-bleed hero photo — cropped from the reference design and extended
-  // leftward (flat color, feathered) so it reads as one continuous background
-  // at any hero width. Replace with your own photo processed the same way.
   heroPhoto: "/images/hero-photo-wide.png",
   resumeUrl: "/resume.pdf", // privacy-safe version with no phone/email; update public/resume.pdf to change it
   bioShort:
@@ -39,8 +33,7 @@ export const profile = {
     "AWS",
   ],
   social: {
-    github: "https://github.com/your-handle", // TODO: your real GitHub URL
+    github: "https://github.com/rudyphax",
     linkedin: "https://www.linkedin.com/in/rudyphaxay",
-    // Email intentionally omitted from the public site — handled via the contact form instead.
   },
 };
