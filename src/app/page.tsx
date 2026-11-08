@@ -38,17 +38,6 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-20 sm:px-10 md:px-12 lg:px-20">
           <div className="max-w-xl">
-            {profile.availableForWork && (
-              <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm font-medium text-foreground shadow-soft">
-                <Sparkles size={14} className="text-accent" />
-                Available for work
-              </div>
-            )}
-
-            <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.25em] text-muted">
-              {profile.name}
-            </p>
-
             <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               {profile.headline.lead}{" "}
               <em className="font-normal italic text-accent">{profile.headline.emphasis}</em>
@@ -71,7 +60,7 @@ export default function Home() {
                   download
                   className="inline-flex items-center gap-2 rounded-full border border-foreground/60 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent-bright"
                 >
-                  Download Résumé <Download size={16} />
+                  Download Resume <Download size={16} />
                 </a>
               )}
             </div>

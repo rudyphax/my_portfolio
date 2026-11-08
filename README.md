@@ -67,6 +67,29 @@ src/
   lib/validation.ts     Zod schema shared by the API route
 ```
 
+## Testing
+
+Two layers of automated tests cover the contact form and resume download:
+
+- **Unit/integration tests** ([Vitest](https://vitest.dev) + [React Testing Library](https://testing-library.com/react)): validate the Zod schema directly, exercise the `/api/contact` route handler with the email provider mocked out, and check component-level wiring (honeypot field, Download Resume links).
+- **End-to-end tests** ([Playwright](https://playwright.dev)): drive a real browser against the running app to confirm the resume actually downloads as a valid PDF from both the home and About pages, that a valid contact form submission shows a success state, that the honeypot silently no-ops instead of sending a message, and that the API itself rejects an email header-injection attempt sent directly over HTTP.
+
+```bash
+npm run test          # unit/integration tests, single run
+npm run test:watch    # unit/integration tests, watch mode
+npm run test:e2e      # end-to-end tests (starts the dev server automatically)
+npm run test:e2e:ui   # end-to-end tests with Playwright's interactive UI
+```
+
+The E2E tests run against fake `RESEND_API_KEY` / `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL` values set in `playwright.config.ts` (never your real ones), and every test path that would otherwise reach the email provider is either mocked at the network layer or short-circuited by validation/honeypot logic before it gets there, so no test run ever sends a real email.
+
+### What's covered on the security side
+
+- Zod rejects carriage returns, line feeds, and null bytes in `name`, `email`, and `message` before they can be interpolated into the outgoing email's subject or reply-to header, which is the standard defense against email header injection.
+- The honeypot field accepts any value without a distinctive validation error, so a bot filling in every field can't tell its submission was silently discarded instead of sent.
+- A basic in-memory rate limit caps repeated submissions per IP.
+- The contact recipient address only ever lives in an environment variable; it's asserted against in tests without ever being hardcoded, and a test confirms it's never echoed back in an API response.
+
 ## Notes
 
 - The contact form has a honeypot field plus a basic in-memory rate limit (3 requests/minute per IP) to blunt casual spam/bots. It resets on every server restart/redeploy — swap in a durable store (e.g. Upstash Redis) if the form ever gets targeted seriously.

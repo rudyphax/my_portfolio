@@ -3,25 +3,24 @@
 
 export const profile = {
   name: "Rudy Phaxay",
-  role: "Full-Stack Software Engineer",
+  role: "Senior Software Engineer",
   brandLabel: "WORKFOLIO", // small tracked label under the logo wordmark
   headline: {
     lead: "Building thoughtful products with",
     emphasis: "engineering depth.",
   },
-  location: "City, State", // TODO: your real city/state
+  location: "Minneapolis, MN",
   photo: "/images/profile.webp",
   // Full-bleed hero photo — cropped from the reference design and extended
   // leftward (flat color, feathered) so it reads as one continuous background
   // at any hero width. Replace with your own photo processed the same way.
   heroPhoto: "/images/hero-photo-wide.png",
-  availableForWork: true, // toggles the "Available for work" badges on the hero and photo
-  resumeUrl: "/resume.pdf", // TODO: drop your resume PDF in /public and update this path, or remove the download link
+  resumeUrl: "/resume.pdf", // privacy-safe version with no phone/email; update public/resume.pdf to change it
   bioShort:
     "I design, build, and ship web and mobile products that solve real problems, create meaningful user experiences, and deliver lasting impact.",
   bioLong: [
-    "TODO: Replace this with your real bio. A couple of short paragraphs works well — how you got into software, what you focus on now, and what kind of problems you enjoy solving.",
-    "TODO: Second paragraph — mention your current role/availability, and anything that makes you distinct (industries you've worked in, systems you've shipped, teams you've led).",
+    "I'm a Senior Software Engineer with over a decade of experience building fast, accessible web and mobile products for the healthcare industry. My focus is the frontend, particularly React, TypeScript, and Next.js, but I've worked comfortably across the stack with Rails, C#, and Flutter, and I care as much about how software performs as how it feels to use.",
+    "Most of my career has been spent on virtual care platforms, first at Zipnosis and then through its acquisitions by Bright Health and Fabric Health, where I led a migration from AngularJS to React, architected a shared UI framework used across multiple products, and helped keep test coverage and accessibility standards high along the way. I hold a B.A. in Computer Information Systems from Metropolitan State University.",
   ],
   highlights: [
     "Full-Stack Development",
@@ -30,18 +29,18 @@ export const profile = {
     "Cloud & DevOps",
   ],
   skills: [
-    "TypeScript",
     "React",
+    "TypeScript",
     "Next.js",
-    "Node.js",
+    "Rails",
+    "Flutter",
     "PostgreSQL",
+    "Tailwind CSS",
     "AWS",
-    "Docker",
-    "GraphQL",
   ],
   social: {
-    github: "https://github.com/your-handle",
-    linkedin: "https://linkedin.com/in/your-handle",
+    github: "https://github.com/your-handle", // TODO: your real GitHub URL
+    linkedin: "https://www.linkedin.com/in/rudyphaxay",
     // Email intentionally omitted from the public site — handled via the contact form instead.
   },
 };

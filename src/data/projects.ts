@@ -1,7 +1,7 @@
-// TODO: Confirm/replace these — the first two were pulled from your reference
-// screenshot, so double-check the descriptions and fill in the real tech stack,
-// live URL, and GitHub URL for each. `image` files go in /public/images/projects/.
-// Leave `liveUrl` or `githubUrl` empty ("") to hide that button on a card.
+// AI Golf Coach details are verified against your resume. GOGz and Project
+// Three still need a real stack/description/links — TODO, confirm those.
+// `image` files go in /public/images/projects/. Leave `liveUrl` or
+// `githubUrl` empty ("") to hide that button on a card.
 
 export type Project = {
   slug: string;
@@ -16,12 +16,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "ai-golf-swing-analyzer",
-    title: "AI Golf Swing Analyzer",
-    description: "Computer vision + AI to analyze and improve your golf swing.",
-    stack: ["Computer Vision", "AI/ML", "Mobile"], // TODO: swap in your real stack (e.g. Python, PyTorch, Swift...)
+    slug: "ai-golf-coach",
+    title: "AI Golf Coach",
+    description:
+      "A full-stack AI analysis platform that turns golf swing video into structured coaching feedback using LLM prompt engineering.",
+    stack: ["React", "TypeScript", "Node.js", "AI/LLM Integration"],
     image: "/images/projects/ai-golf-swing-analyzer.png",
-    liveUrl: "",
+    liveUrl: "https://ai-golf-coach-eight.vercel.app/",
     githubUrl: "",
     featured: true,
   },

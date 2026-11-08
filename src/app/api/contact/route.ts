@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { contactSchema } from "@/lib/validation";
+import { profile } from "@/data/profile";
 
 export const runtime = "nodejs";
 
@@ -68,7 +69,7 @@ export async function POST(request: Request) {
       from: `Portfolio Contact Form <${fromEmail}>`,
       to: toEmail,
       replyTo: email,
-      subject: `New message from ${name}`,
+      subject: `New message from ${name} - ${profile.name} Portfolio`,
       text: `From: ${name} <${email}>\n\n${message}`,
     });
 
