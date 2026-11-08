@@ -13,7 +13,7 @@ export default function ContactPage() {
     <Section
       eyebrow="Contact"
       title="Let's work together"
-      description="Have a role, project, or idea you'd like to talk through? Send a message below — it goes straight to my inbox."
+      description="Have a role, project, or idea you'd like to talk through? Send a message below and it goes straight to my inbox."
       className="pt-36"
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_320px]">

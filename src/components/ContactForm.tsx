@@ -51,7 +51,7 @@ export default function ContactForm() {
         <CheckCircle2 className="text-accent" size={40} />
         <p className="font-serif text-lg font-semibold text-foreground">Message sent</p>
         <p className="max-w-sm text-sm text-muted">
-          Thanks for reaching out — I&apos;ll get back to you as soon as I can.
+          Thanks for reaching out. I&apos;ll get back to you as soon as I can.
         </p>
         <button
           onClick={() => setStatus("idle")}

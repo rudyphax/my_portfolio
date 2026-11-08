@@ -22,7 +22,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.role}`,
+  title: `${profile.name} | ${profile.role}`,
   description: `${profile.headline.lead} ${profile.headline.emphasis}`,
 };
 
