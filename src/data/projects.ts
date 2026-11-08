@@ -1,7 +1,7 @@
-// AI Golf Coach details are verified against your resume. GOGz and Project
-// Three still need a real stack/description/links — TODO, confirm those.
-// `image` files go in /public/images/projects/. Leave `liveUrl` or
-// `githubUrl` empty ("") to hide that button on a card.
+// AI Golf Coach and Portfolio Website details are verified. GOGz still needs
+// a real stack/description/links (TODO, confirm those). `image` files go in
+// /public/images/projects/. Leave `liveUrl` or `githubUrl` empty ("") to
+// hide that button on a card.
 
 export type Project = {
   slug: string;
@@ -37,14 +37,22 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "project-three",
-    title: "Project Three",
+    slug: "portfolio",
+    title: "Portfolio Website",
     description:
-      "TODO: One or two sentences on what this project does, who it's for, and the problem it solves.",
-    stack: ["Next.js", "Tailwind CSS", "Supabase"],
-    image: "/images/projects/placeholder-3.svg",
-    liveUrl: "",
-    githubUrl: "",
+      "My personal portfolio site itself, built with Next.js and TypeScript, featuring a privacy-protecting contact form and full automated test coverage.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Resend",
+      "Vitest",
+      "Playwright",
+      "Agentic AI",
+    ],
+    image: "/images/projects/portfolio.jpg",
+    liveUrl: "https://rudyphaxay.com",
+    githubUrl: "https://github.com/rudyphax/my_portfolio",
     featured: false,
   },
 ];
