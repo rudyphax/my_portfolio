@@ -17,7 +17,7 @@ export const profile = {
     "Most of my career has been spent on virtual care platforms, first at Zipnosis and then through its acquisitions by Bright Health and Fabric Health, where I led a migration from AngularJS to React, architected a shared UI framework used across multiple products, and helped keep test coverage and accessibility standards high along the way. I hold a B.A. in Computer Information Systems from Metropolitan State University.",
   ],
   highlights: [
-    "Full-Stack Development",
+    "Frontend Development",
     "Product Development",
     "AI & Automation",
     "Cloud & DevOps",
