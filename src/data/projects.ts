@@ -22,7 +22,7 @@ export const projects: Project[] = [
       "A full-stack AI analysis platform that turns golf swing video into structured coaching feedback using LLM prompt engineering.",
     stack: ["React", "TypeScript", "Node.js", "AI/LLM Integration"],
     image: "/images/projects/ai-golf-swing-analyzer.png",
-    liveUrl: "https://ai-golf-coach-eight.vercel.app/",
+    liveUrl: "https://swingcoach.rudyphaxay.com/",
     githubUrl: "",
     featured: true,
   },
