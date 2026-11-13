@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "GOGz",
     description: "A social golf app for planning, tracking, and sharing rounds.",
     stack: ["Social", "Mobile", "Golf"], // TODO: swap in your real stack
-    image: "/images/projects/gogz.png",
+    image: "/images/projects/gogz_project_screenshot.png",
     liveUrl: "https://gogz.rudyphaxay.com",
     githubUrl: "https://github.com/rudyphax/gogz_v2",
     featured: true,
