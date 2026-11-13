@@ -23,7 +23,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Node.js", "AI/LLM Integration"],
     image: "/images/projects/ai-golf-swing-analyzer.png",
     liveUrl: "https://swingcoach.rudyphaxay.com/",
-    githubUrl: "",
+    githubUrl: "https://github.com/rudyphax/ai_golf_coach",
     featured: true,
   },
   {
@@ -32,8 +32,8 @@ export const projects: Project[] = [
     description: "A social golf app for planning, tracking, and sharing rounds.",
     stack: ["Social", "Mobile", "Golf"], // TODO: swap in your real stack
     image: "/images/projects/gogz.png",
-    liveUrl: "",
-    githubUrl: "",
+    liveUrl: "https://gogz.rudyphaxay.com",
+    githubUrl: "https://github.com/rudyphax/gogz_v2",
     featured: true,
   },
   {
